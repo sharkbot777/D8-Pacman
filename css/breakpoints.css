@@ -1,0 +1,91 @@
+/*pacman start*/
+@media screen and (min-height:1200px), screen and (min-device-height : 1200px) {
+  #panel, #home {
+    zoom: 135%;
+  }
+}
+
+@media screen and (max-width:1024px), screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  #panel, #home {
+    zoom: 105%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+
+}
+@media screen and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3) {
+  #panel, #home {
+    zoom: 60%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+  #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  h1, #canvas-panel-title-pacman {
+    visibility: hidden;
+  }
+}
+@media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) {
+  #panel, #home {
+    zoom: 55%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+  h1, #canvas-panel-title-pacman, #control-up-second, #control-down-second, #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  #score, #highscore {
+    top: 0px;
+  }
+  #panel {
+    padding-top: 50px;
+  }
+  #canvas-lifes, #canvas-level-fruits {
+    top: 607px;
+  }
+  #control {
+    bottom: 50px;
+    width: 550px;
+    height: 55px;
+  }
+  #control-up, #control-down, #control-left, #control-right {
+    top: 0px;
+    bottom: 0px;
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+  #message {
+    top: 347px;
+  }
+}
+/*pacman-end*/
+/*pacman-home-start*/
+@media screen and (min-height:1200px), screen and (min-device-height : 1200px) {
+
+}
+
+@media screen and (max-width:1024px), screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+  #canvas-panel-title-pacman {
+    left: 49px;
+    width: 42px;
+  }
+}
+
+@media screen and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3) {
+
+}
+@media screen and (max-height:480px), screen and (min-device-height : 320px) and (max-device-height : 480px) {
+
+}
+/*pacman-home-end*/

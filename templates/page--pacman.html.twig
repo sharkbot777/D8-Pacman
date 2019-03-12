@@ -1,0 +1,70 @@
+<!-- #main-content -->
+<div id="main-content">
+  <div class="container">
+
+    <div class="row">
+      {% if page.sidebar_first %}
+        <aside class="{{sidebar_grid_class}}">
+          <!--#sidebar-first-->
+          <section id="sidebar-first" class="sidebar clearfix">
+            {{ page.sidebar_first }}
+          </section>
+          <!--EOF:#sidebar-first-->
+        </aside>
+      {% endif %}
+
+      <section class="{{main_grid_class}}">
+
+        <!-- #main -->
+        <div id="main" class="clearfix">
+
+          <!-- #breadcrumb -->
+          <div id="breadcrumb" class="clearfix">
+            <!-- #breadcrumb-inside -->
+            <div id="breadcrumb-inside" class="clearfix">
+              {{ breadcrumb }}
+            </div>
+            <!-- EOF: #breadcrumb-inside -->
+          </div>
+          <!-- EOF: #breadcrumb -->
+
+          {% if page.promoted %}
+            <!-- #promoted -->
+            <div id="promoted" class="clearfix">
+              <div id="promoted-inside" class="clearfix">
+                {{ page.promoted }}
+              </div>
+            </div>
+            <!-- EOF: #promoted -->
+          {% endif %}
+
+          <!-- EOF:#content-wrapper -->
+          <div id="content-wrapper">
+
+            {% if page.content %}
+              {{ page.content }}
+            {% endif %}
+
+          </div>
+          <!-- EOF:#content-wrapper -->
+
+        </div>
+        <!-- EOF:#main -->
+
+      </section>
+
+      {% if page.sidebar_second %}
+        <aside class="{{sidebar_grid_class}}">
+          <!--#sidebar-second-->
+          <section id="sidebar-second" class="sidebar clearfix">
+            {{ page.sidebar_second }}
+          </section>
+          <!--EOF:#sidebar-second-->
+        </aside>
+      {% endif %}
+
+    </div>
+
+  </div>
+</div>
+<!-- EOF:#main-content -->

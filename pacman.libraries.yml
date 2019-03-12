@@ -1,0 +1,73 @@
+jquery:
+  js:
+    js/jquery.js: {}
+
+jquery-mobile:
+  js:
+    js/jquery-mobile.js: {minified: true}
+
+
+jquery-buzz:
+  js:
+    js/jquery-buzz.js: {minified: true}
+
+
+tools:
+  js:
+    js/tools.js: {minified: true}
+
+
+game:
+  js:
+    js/game.js: {minified: true}
+
+
+board:
+  js:
+    js/board.js: {minified: true}
+
+
+paths:
+  js:
+    js/paths.js: {minified: true}
+
+
+bubbles:
+  js:
+    js/bubbles.js: {minified: true}
+
+
+fruits:
+  js:
+    js/fruits.js: {minified: true}
+
+
+pacman:
+  js:
+    js/pacman.js: {minified: true}
+
+
+ghosts:
+  js:
+    js/ghosts.js: {minified: true}
+
+
+home:
+  js:
+    js/home.js: {minified: true}
+
+
+sound:
+  js:
+    js/sound.js: {minified: true}
+
+
+pacmain:
+  js:
+    js/pacmain.js: {minified: true}
+  css:
+    theme:
+      css/pacman.css: {}
+      css/pacman-home.css: {}
+
+

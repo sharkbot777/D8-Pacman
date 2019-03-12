@@ -1,0 +1,96 @@
+@desktop-large: ~"only screen and (min-height:1200px), screen and (min-device-height : 1200px)";
+@desktop: ~"only screen and (max-width:1024px), screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+@phone: ~"only screen and (max-height:480px), (max-device-height : 800px)";
+@tablet: ~"only screen  and (max-height:640px), screen and (min-device-height : 480px) and (max-device-height : 640px) and (-webkit-device-pixel-ratio: 3)";
+
+/*pacman start*/
+@desktop-large: {
+  #panel, #home {
+    zoom: 135%;
+  }
+}
+
+@desktop: {
+  #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  #panel, #home {
+    zoom: 105%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+
+}
+@tablet: {
+  #panel, #home {
+    zoom: 60%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+  #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  h1, #canvas-panel-title-pacman {
+    visibility: hidden;
+  }
+}
+@phone: {
+  #panel, #home {
+    zoom: 55%;
+  }
+  #control-up-big, #control-down-big, #control-left-big, #control-right-big {
+    display: inline;
+  }
+  h1, #canvas-panel-title-pacman, #control-up-second, #control-down-second, #home .help-button, #panel .help-button, #home .github, #sound, .sound {
+    display: none;
+  }
+  #score, #highscore {
+    top: 0;
+  }
+  #panel {
+    padding-top: 50px;
+  }
+  #canvas-lifes, #canvas-level-fruits {
+    top: 607px;
+  }
+  #control {
+    bottom: 50px;
+    width: 550px;
+    height: 55px;
+  }
+  #control-up, #control-down, #control-left, #control-right {
+    top: 0;
+    bottom: 0;
+    background-size: 48px;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+  }
+  #message {
+    top: 347px;
+  }
+}
+/*pacman-end*/
+/*pacman-home-start*/
+@desktop-large: {
+
+}
+
+@desktop: {
+
+
+  #canvas-panel-title-pacman {
+    left: 49px;
+    width: 42px;
+  }
+}
+
+@tablet: {
+
+}
+@phone: {
+
+}
+/*pacman-home-end*/

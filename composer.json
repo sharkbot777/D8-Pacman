@@ -1,0 +1,14 @@
+{
+  "name": "drupal/pacman",
+  "type": "drupal-module",
+  "description": "Module to create a pacman page and block",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/pacman",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pacman",
+    "source": "http://cgit.drupalcode.org/pacman"
+  },
+  "require": { }
+}

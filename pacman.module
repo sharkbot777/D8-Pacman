@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains pacman.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function pacman_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the pacman module.
+    case 'help.page.pacman':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module to create a pacman page and block') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function pacman_theme() {
+  return [
+    'pacman' => [
+      'variables' => [],
+    ],
+  ];
+}

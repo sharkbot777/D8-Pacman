@@ -1,0 +1,15 @@
+pacman.content:
+   path: '/pacman'
+   defaults:
+     _controller: 'Drupal\pacman\controller\pacmanController::content'
+     _title: 'pacman'
+   requirements:
+     _permission: 'access content'
+
+pacman.page:
+  path: '/pacman'
+  defaults:
+    _controller: 'Drupal\pacman\controller\pacmanController::content'
+    _title: 'pacman'
+  requirements:
+    _permission: 'access content'

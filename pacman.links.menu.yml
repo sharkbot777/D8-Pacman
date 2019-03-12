@@ -1,0 +1,7 @@
+pacman.page:
+  title: 'pacman'
+  description: 'play pacman'
+  route_name: pacman.content
+  menu_name: main
+  weight: 101
+  enabled: 1
